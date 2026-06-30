@@ -9,3 +9,4 @@ __pycache__/
 task-speechopen_events.json
 task-speechopen_acq-pangolin_events.json
 task-speechopen_acq-pangolin_recording-vocal_beh.json
+.nemar/
