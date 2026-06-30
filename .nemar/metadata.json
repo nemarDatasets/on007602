@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "EEG-Speech Brain Decoding Dataset",
   "description": "This dataset comprises EEG recordings and concurrent vocal audio from participants performing an overt speech production task. Participants vocalized visually presented text while EEG activity was recorded, providing multimodal neuroimaging data for brain decoding research. The dataset includes raw EEG data in EDF format and behavioral recordings of vocal output, organized according to BIDS conventions with preprocessing code and derivatives.",
-  "methods_description": "EEG recordings were acquired during an overt speech production task (speechopen) in which participants vocalized visually presented text. Concurrent vocal recordings were captured in WAV format. Sessions are identified by recording date (YYYYMMDD format) with multiple recordings on the same day distinguished by run numbers.",
+  "methods_description": "EEG recordings were acquired during an overt speech production task (speechopen) in which participants vocalized visually presented text. Concurrent vocal recordings were captured in WAV format. Sessions are identified by recording date (YYYYMMDD format), with multiple recordings on the same day distinguished by run numbers.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,10 +28,7 @@
       "term": "EEG"
     },
     {
-      "term": "Speech Production Measurement",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013068"
+      "term": "speech production"
     },
     {
       "term": "brain decoding"
@@ -40,10 +37,10 @@
       "term": "motor imagery"
     },
     {
-      "term": "neural encoding"
+      "term": "neural decoding"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "overt speech"
     }
   ],
   "related_identifiers": [
