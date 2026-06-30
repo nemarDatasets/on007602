@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG-Speech Brain Decoding Dataset",
+  "description": "This dataset comprises EEG recordings and concurrent vocal audio from participants performing an overt speech production task. Participants vocalized visually presented text while EEG activity was recorded, providing multimodal neuroimaging data for brain decoding research. The dataset includes raw EEG data in EDF format and behavioral recordings of vocal output, organized according to BIDS conventions with preprocessing code and derivatives.",
+  "methods_description": "EEG recordings were acquired during an overt speech production task (speechopen) in which participants vocalized visually presented text. Concurrent vocal recordings were captured in WAV format. Sessions are identified by recording date (YYYYMMDD format) with multiple recordings on the same day distinguished by run numbers.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,57 +23,15 @@
       "orcid": "0000-0002-9941-6510"
     }
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds007602.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on007602",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on007602",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1088/1741-2552/ae54d0",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "JST",
-      "award_number": "JPMJMS2012",
-      "award_title": "Moonshot R&D Grant"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".json",
-    ".md",
-    ".tsv"
-  ],
-  "description": "This dataset comprises EEG recordings and concurrent vocal audio from participants performing an overt speech production task. Participants vocalized visually presented text while EEG activity was recorded, providing multimodal neurophysiological data for brain decoding research. The dataset includes raw EEG data in EDF format and behavioral recordings of vocal output, organized across multiple sessions with standardized BIDS structure to facilitate reproducible analysis of the neural correlates of speech production.",
-  "methods_description": "EEG recordings were acquired during an overt speech production task (speechopen) in which participants vocalized visually presented text. Concurrent vocal recordings were captured as behavioral data. Sessions are organized by recording date (YYYYMMDD format), with multiple recordings on the same day distinguished by run numbers. Raw EEG data is stored in EDF format, and vocal recordings are provided as WAV files.",
   "keywords": [
     {
       "term": "EEG"
     },
     {
-      "term": "speech production"
+      "term": "Speech Production Measurement",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013068"
     },
     {
       "term": "brain decoding"
@@ -86,5 +46,49 @@
       "term": "multimodal neuroimaging"
     }
   ],
-  "source_hash": "29199f3f14fc35013e33510beff98b8f274a7941f34c9e58bc2f644ad82980e2"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on007602",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007602",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1088/1741-2552/ae54d0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007602.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "JST",
+      "award_number": "JPMJMS2012",
+      "award_title": "Moonshot R&D Grant"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "53.3 GB (114 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "ba064eec9cf9f2ddd057cc1b8f6fb297518aad6e3ef958ab1d33bf170785427a"
 }
