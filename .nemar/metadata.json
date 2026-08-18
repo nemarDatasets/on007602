@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG-Speech Brain Decoding Dataset",
-  "description": "This dataset comprises EEG recordings and concurrent vocal audio from participants performing an overt speech production task. Participants vocalized visually presented text while EEG activity was recorded, providing multimodal neuroimaging data for brain decoding research. The dataset includes raw EEG data in EDF format and behavioral recordings of vocal output, organized according to BIDS conventions with preprocessing code and derivatives.",
-  "methods_description": "EEG recordings were acquired during an overt speech production task (speechopen) in which participants vocalized visually presented text. Concurrent vocal recordings were captured in WAV format. Sessions are identified by recording date (YYYYMMDD format), with multiple recordings on the same day distinguished by run numbers.",
+  "description": "This dataset comprises EEG recordings paired with vocal audio data collected during an overt speech production task, in which participants vocalized visually presented text. Sessions are organized by recording date, with multiple runs per day, supporting research on brain-to-speech decoding and neural correlates of speech production. The dataset is intended to facilitate development and evaluation of EEG-based speech brain-computer interface models.",
+  "methods_description": "EEG data were recorded during an overt speech production task (speechopen) in which participants vocalized visually presented text, with simultaneous audio recordings of vocalizations. Raw EEG data are stored in EDF format and vocal recordings in WAV format, organized by session (recording date) and run.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,22 +25,24 @@
   },
   "keywords": [
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "speech decoding"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "overt speech production"
+    },
+    {
       "term": "EEG"
     },
     {
-      "term": "speech production"
-    },
-    {
-      "term": "brain decoding"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "neural decoding"
-    },
-    {
-      "term": "overt speech"
+      "term": "audio recordings"
     }
   ],
   "related_identifiers": [
@@ -69,7 +71,7 @@
     {
       "funder_name": "JST",
       "award_number": "JPMJMS2012",
-      "award_title": "Moonshot R&D Grant"
+      "award_title": "Moonshot R&D"
     }
   ],
   "resource_type_general": "Dataset",
